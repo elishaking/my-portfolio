@@ -15,6 +15,10 @@ export default class Landing extends Component {
               I am King Elisha <br />
               A <span>Full Stack</span> Software Enginner <span>\></span>
             </h1>
+            <p>
+              I love building elegant software solutions with <br />
+              beautiful <span>frontends</span> and robust <span>backends</span>
+            </p>
             <button>Contact Me</button>
           </div>
         </div>
