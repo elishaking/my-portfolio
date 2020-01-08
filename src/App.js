@@ -1,11 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.scss';
+
+import Landing from './components/routes/Landing';
 
 function App() {
   return (
-    <div className="app">
-      <h1>Hello</h1>
-    </div>
+    <Router>
+      <Route path="/" component={Landing} exact />
+    </Router>
   );
 }
 
