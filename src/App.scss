@@ -1,3 +1,5 @@
+$base-color: #3F3D56;
+
 .container {
   padding: 3em 10vw;
 }
@@ -27,6 +29,15 @@
       border-bottom: 3px solid;
     }
   }
+}
+
+.landing {
+  color: $base-color;
+  height: 100vh;
+  background-image: url(./assets/images/bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .app {

@@ -5,7 +5,7 @@ import Navbar from '../Navbar';
 export default class Landing extends Component {
   render() {
     return (
-      <Container>
+      <Container className="landing">
         <Navbar />
 
         <div className="content">
