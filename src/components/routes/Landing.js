@@ -13,7 +13,7 @@ export default class Landing extends Component {
             <h1>Hi</h1>
             <h1 className="headline">
               I am King Elisha <br />
-              A <span>Full Stack</span> Software Enginner \>
+              A <span>Full Stack</span> Software Enginner <span>\></span>
             </h1>
             <button>Contact Me</button>
           </div>

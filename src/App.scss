@@ -1,5 +1,9 @@
 $base-color: #3F3D56;
 
+.headline {
+  font-size: 300%;
+}
+
 .container {
   padding: 3em 10vw;
 }
@@ -38,6 +42,40 @@ $base-color: #3F3D56;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .left {
+      .headline {
+        margin: 0.1em 0 1em 0;
+
+        span {
+          color: #6C5884;
+        }
+      }
+    }
+
+    button {
+      padding: 0.7em 1.4em;
+      font-size: 130%;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+      background-color: $base-color;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 5px rgba($color: $base-color, $alpha: 0.1);
+      transition: 0.3s ease-in-out;
+    }
+
+    button:hover {
+      box-shadow: 0 0 20px 10px rgba($color: $base-color, $alpha: 0.3);
+    }
+  }
 }
 
 .app {
