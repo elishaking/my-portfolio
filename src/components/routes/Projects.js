@@ -11,6 +11,8 @@ import gracelites from '../../assets/images/projects/Gracelites.svg';
 import quotz from '../../assets/images/projects/Quotz.svg';
 import blazehub from '../../assets/images/projects/BlazeHub.svg';
 import squaredemy from '../../assets/images/projects/Squaredemy.svg';
+import nasax from '../../assets/images/projects/NasaX.svg';
+import markdown from '../../assets/images/projects/Blaze-Markdown.svg';
 
 
 const projects = [
@@ -37,6 +39,18 @@ const projects = [
     source: gracelites,
     description: "Gracelites is an outstanding Nursery/Primary committed to laying the crucial foundations that will set your child on the right path to all-round excellence spiritually, intellectually and physically",
     link: "https://gracelites.skyblazar.com"
+  },
+  {
+    name: "Nasa Xplorer",
+    source: nasax,
+    description: "Explore fascinating images of Space: Planets, Moons, Asteriods, Stars, Galaxies and more",
+    link: "https://nasax.skyblazar.com"
+  },
+  {
+    name: "Blaze Markdown",
+    source: markdown,
+    description: "Preview markdown and download as PDF or Image",
+    link: "https://markdown.skyblazar.com"
   },
   {
     name: "Dizt: Navigation App",
