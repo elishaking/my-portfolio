@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Container from '../Container';
+import Navbar from '../Navbar';
 
 export default class Landing extends Component {
   render() {
     return (
       <Container>
-        <h1>Landing Page</h1>
+        <Navbar />
       </Container>
     );
   }
