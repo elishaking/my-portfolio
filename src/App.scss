@@ -6,6 +6,9 @@ $base-color: #3F3D56;
 
 .container {
   padding: 3em 10vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar {
@@ -54,9 +57,6 @@ $base-color: #3F3D56;
   color: $base-color;
   height: 100vh;
   background-image: url(./assets/images/bg.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
   .content {
     height: 100%;
@@ -104,6 +104,26 @@ $base-color: #3F3D56;
 
   @media (max-width: 760px) {
     height: fit-content;
+  }
+}
+
+.about {
+  background-image: url(./assets/images/bg-2.svg);
+  height: 100vh;
+  color: $base-color;
+
+  .content {
+    margin-top: 3em;
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+
+    .tech-list {
+      .tech {
+        margin-bottom: 0.5em;
+      }
+    }
   }
 }
 
