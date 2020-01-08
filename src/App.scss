@@ -33,6 +33,21 @@ $base-color: #3F3D56;
       border-bottom: 3px solid;
     }
   }
+
+  @media (max-width: 520px) {
+    h1 {
+      display: none;
+    }
+
+    ul {
+      width: 100%;
+      justify-content: space-between;
+
+      a {
+        margin: 0 0 2em 0;
+      }
+    }
+  }
 }
 
 .landing {
@@ -85,6 +100,10 @@ $base-color: #3F3D56;
     button:hover {
       box-shadow: 0 0 20px 10px rgba($color: $base-color, $alpha: 0.3);
     }
+  }
+
+  @media (max-width: 760px) {
+    height: fit-content;
   }
 }
 
