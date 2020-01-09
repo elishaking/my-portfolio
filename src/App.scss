@@ -147,6 +147,15 @@ $base-color: #3F3D56;
         }
       }
     }
+
+    .education-list {
+      margin-bottom: 3em;
+
+      p span,
+      h2 span {
+        color: #606060;
+      }
+    }
   }
 }
 

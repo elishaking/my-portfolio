@@ -58,6 +58,17 @@ const positions = [
   },
 ];
 
+const education = [
+  {
+    school: "Eastern Mediterranean University",
+    degree: "B.Sc.",
+    field: "Electrical and Electronics Engineering",
+    grade: "4.00/4.00",
+    start: new Date(2012, 10, 1),
+    end: new Date(2016, 6, 28)
+  }
+];
+
 export default class About extends Component {
   /**
    * @param {Date} startDate
@@ -115,6 +126,24 @@ export default class About extends Component {
               positions.map((position) => (
                 <div className="work">
                   <h2><span>{position.title}</span> | {position.company}</h2>
+                </div>
+              ))
+            }
+          </div>
+
+          <h1>Education</h1>
+          <div className="education-list">
+            {
+              education.map((edu) => (
+                <div className="work">
+                  <h2><span>{edu.degree}</span> | {edu.field}</h2>
+                  <p><span>{edu.school}</span> | {edu.grade}</p>
+                  <p>
+                    {edu.start.getFullYear()} {
+                      edu.present ? " - Present" :
+                        edu.start.getFullYear() === edu.end.getFullYear() ? "" : ` - ${edu.end.getFullYear()}`
+                    }
+                  </p>
                 </div>
               ))
             }
