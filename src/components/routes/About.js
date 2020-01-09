@@ -86,6 +86,8 @@ export default class About extends Component {
   render() {
     return (
       <Container className="about">
+        <div className="fixed-bg"></div>
+
         <Navbar route="about" />
 
         <div className="content">

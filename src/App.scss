@@ -108,11 +108,26 @@ $base-color: #3F3D56;
 }
 
 .about {
-  background-image: url(./assets/images/bg-2.svg);
-  height: 100vh;
   color: $base-color;
 
+  .fixed-bg {
+    margin-left: -10vw;
+    margin-top: -3em;
+    background-image: url(./assets/images/bg-2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+  }
+
+  nav {
+    position: relative;
+  }
+
   .content {
+    position: relative;
     margin-top: 3em;
 
     h1 {
@@ -134,7 +149,7 @@ $base-color: #3F3D56;
         margin-bottom: 0.5em;
 
         h2 {
-          max-width: 630px;
+          max-width: 730px;
 
           span {
             color: #606060;
