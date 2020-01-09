@@ -128,10 +128,14 @@ $base-color: #3F3D56;
     }
 
     .work-list {
+      margin-bottom: 3em;
+
       .work {
         margin-bottom: 0.5em;
 
         h2 {
+          max-width: 630px;
+
           span {
             color: #606060;
           }

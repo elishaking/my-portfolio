@@ -27,7 +27,7 @@ const techs = [
     name: "GCP/Firebase",
     start: new Date(2016, 9, 1)
   }
-]
+];
 
 const works = [
   {
@@ -45,7 +45,18 @@ const works = [
     title: "Full Stack Engineer",
     description: "Collaborated with a team of developers and designers both remotely and on-site. Participated in the UI/UX design of several mobile and web apps. Led code implementation and documentation for several responsive web apps and mobile apps."
   }
-]
+];
+
+const positions = [
+  {
+    company: "Telecom Dairesi",
+    title: "Telecom Engineer and Android Developer"
+  },
+  {
+    company: "Eastern Mediterranean University",
+    title: "Co-coordinator of Arduino Masterclass"
+  },
+];
 
 export default class About extends Component {
   /**
@@ -93,6 +104,17 @@ export default class About extends Component {
                   </p>
 
                   <p className="description">{work.description}</p>
+                </div>
+              ))
+            }
+          </div>
+
+          <h1>Other Notable Positions</h1>
+          <div className="work-list">
+            {
+              positions.map((position) => (
+                <div className="work">
+                  <h2><span>{position.title}</span> | {position.company}</h2>
                 </div>
               ))
             }
