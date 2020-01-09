@@ -120,8 +120,27 @@ $base-color: #3F3D56;
     }
 
     .tech-list {
+      margin-bottom: 3em;
+
       .tech {
         margin-bottom: 0.5em;
+      }
+    }
+
+    .work-list {
+      .work {
+        margin-bottom: 0.5em;
+
+        h2 {
+          span {
+            color: #606060;
+          }
+        }
+
+        p.description {
+          font-size: 130%;
+          max-width: 630px;
+        }
       }
     }
   }

@@ -29,6 +29,24 @@ const techs = [
   }
 ]
 
+const works = [
+  {
+    company: "Skyblazar",
+    start: new Date(2018, 2, 1),
+    present: true,
+    title: "Entrepreneur and Full Stack Engineer",
+    description: "Currently developing several apps using React for web (front-end), Flutter for mobile and Express for backend. A handful are publicly available on GitHub while the rest are private repos hosted on Gitlab"
+  },
+  {
+    company: "Quanteq Technology Services",
+    start: new Date(2017, 3, 1),
+    present: false,
+    end: new Date(2018, 1, 8),
+    title: "Full Stack Engineer",
+    description: "Collaborated with a team of developers and designers both remotely and on-site. Participated in the UI/UX design of several mobile and web apps. Led code implementation and documentation for several responsive web apps and mobile apps."
+  }
+]
+
 export default class About extends Component {
   /**
    * @param {Date} startDate
@@ -50,13 +68,31 @@ export default class About extends Component {
 
         <div className="content">
           <h1>Tech <span>\></span></h1>
-
           <div className="tech-list">
             {
               techs.map((tech) => (
                 <div className="tech">
                   <h2>{tech.name}</h2>
                   <p>{this.getExperience(tech.start)}</p>
+                </div>
+              ))
+            }
+          </div>
+
+          <h1>Work Experience</h1>
+          <div className="work-list">
+            {
+              works.map((work) => (
+                <div className="work">
+                  <h2><span>{work.title}</span> | {work.company}</h2>
+                  <p>
+                    {work.start.getFullYear()} {
+                      work.present ? " - Present" :
+                        work.start.getFullYear() === work.end.getFullYear() ? "" : ` - ${work.end.getFullYear()}`
+                    }
+                  </p>
+
+                  <p className="description">{work.description}</p>
                 </div>
               ))
             }
