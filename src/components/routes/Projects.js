@@ -103,15 +103,15 @@ export default class Projects extends Component {
         <div className="content">
           <div className="project-list">
             {
-              projects.map((project) => (
-                <div className="project">
+              projects.map((project, index) => (
+                <div key={index} className="project">
                   <div className="image">
                     <div>
                       <img src={project.source} alt={project.name} data-description={project.description} />
                     </div>
 
                     <div className="hover" onClick={this.openModal}>
-                      <See />
+                      <See onClick={(e) => e.stopPropagation()} />
                     </div>
                   </div>
 

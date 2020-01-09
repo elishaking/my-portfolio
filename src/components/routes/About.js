@@ -96,8 +96,8 @@ export default class About extends Component {
             {
               techs.map((tech) => (
                 <div className="tech">
-                  <h2>{tech.name}</h2>
-                  <p>{this.getExperience(tech.start)}</p>
+                  <h2><span className="light">{tech.name}</span> | {this.getExperience(tech.start)}</h2>
+                  {/* <p></p> */}
                 </div>
               ))
             }

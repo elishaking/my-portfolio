@@ -8,12 +8,12 @@ export default function Navbar({ route = "home" }) {
 
       <ul>
         <Link to="/" className={route === "home" ? "active" : ""}>Home</Link>
+        <Link to="/projects" className={route === "projects" ? "active" : ""}>Projects</Link>
         <Link to="/about" className={route === "about" ? "active" : ""}>About</Link>
         {/* <Link to="/github" className={route === "github" ? "active" : ""}>Github</Link> */}
         <a href="https://github.com/elishaking"
           target="_blank"
           rel="noopener noreferrer">Github</a>
-        <Link to="/projects" className={route === "projects" ? "active" : ""}>Projects</Link>
       </ul>
     </nav>
   )
