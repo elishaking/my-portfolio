@@ -3,6 +3,10 @@ import Container from '../Container';
 import Navbar from '../Navbar';
 
 export default class Landing extends Component {
+  openMail = () => {
+    window.open('mailto:ek.chibueze@gmail.com', '_blank');
+  };
+
   render() {
     return (
       <Container className="landing">
@@ -19,7 +23,7 @@ export default class Landing extends Component {
               I love building elegant software solutions with <br />
               beautiful <span>frontends</span> and robust <span>backends</span>
             </p>
-            <button>Contact Me</button>
+            <button onClick={this.openMail}>Contact Me</button>
           </div>
         </div>
       </Container>
