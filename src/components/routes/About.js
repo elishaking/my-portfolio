@@ -17,7 +17,7 @@ const techs = [
   },
   {
     name: "React/Redux",
-    start: new Date(2015, 9, 1)
+    start: new Date(2016, 9, 1)
   },
   {
     name: "Express",
