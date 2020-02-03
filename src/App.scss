@@ -202,6 +202,19 @@ $base-color: #3F3D56;
     .project {
       margin-bottom: 3em;
 
+      .tech {
+        margin-top: 1em;
+
+        span.separator {
+          font-weight: 900;
+          margin: 0 0.5em;
+        }
+      }
+
+      .project-link {
+        margin-top: 0.5em;
+      }
+
       .image {
         position: relative;
         max-width: 600px;
