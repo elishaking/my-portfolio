@@ -134,6 +134,13 @@ $base-color: #3F3D56;
     position: relative;
     margin-top: 2em;
 
+    .codewars-badge {
+      width: 100%;
+      max-width: fit-content;
+      margin-bottom: 1em;
+      cursor: pointer;
+    }
+
     h1 {
       margin-bottom: 0.5em;
     }

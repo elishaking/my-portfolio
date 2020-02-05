@@ -83,6 +83,10 @@ export default class About extends Component {
     return `${years}y ${months}m`;
   }
 
+  openCodeWars = () => {
+    window.open("https://www.codewars.com/users/elishaking", "_blank");
+  }
+
   render() {
     return (
       <Container className="about">
@@ -91,7 +95,10 @@ export default class About extends Component {
         <Navbar route="about" />
 
         <div className="content">
+          <img onClick={this.openCodeWars} className="codewars-badge" src="https://www.codewars.com/users/elishaking/badges/large" alt="Codewars Badge" />
+
           <h1>Tech <span>\></span></h1>
+
           <div className="tech-list">
             {
               techs.map((tech) => (
