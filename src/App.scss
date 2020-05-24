@@ -16,6 +16,28 @@ $base-color: #3f3d56;
   justify-content: space-between;
   align-items: center;
 
+  ul.svg {
+    display: none;
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    justify-content: center;
+
+    div {
+      background-color: $base-color;
+      padding: 0.7em 2em 0.3em 2em;
+      border-radius: 1000px 1000px 0 0;
+    }
+
+    svg {
+      margin: 0 0.7em;
+      font-size: 1.7em;
+      fill: #fff;
+    }
+  }
+
   ul {
     display: flex;
     list-style: none;
@@ -33,22 +55,10 @@ $base-color: #3f3d56;
 
     a:hover {
       opacity: 0.7;
+    }
+
+    a.text:hover {
       border-bottom: 3px solid;
-    }
-  }
-
-  @media (max-width: 520px) {
-    h1 {
-      display: none;
-    }
-
-    ul {
-      width: 100%;
-      justify-content: space-between;
-
-      a {
-        margin: 0 0 2em 0;
-      }
     }
   }
 }
@@ -100,10 +110,6 @@ $base-color: #3f3d56;
     button:hover {
       box-shadow: 0 0 20px 10px rgba($color: $base-color, $alpha: 0.3);
     }
-  }
-
-  @media (max-width: 760px) {
-    height: fit-content;
   }
 }
 
@@ -251,10 +257,6 @@ $base-color: #3f3d56;
         .hover:hover {
           opacity: 0.7;
         }
-
-        @media (min-width: 1800px) {
-          max-width: 700px;
-        }
       }
 
       a {
@@ -277,6 +279,35 @@ $base-color: #3f3d56;
 
     .project:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    h1 {
+      display: none;
+    }
+
+    ul {
+      width: 100%;
+      justify-content: space-between;
+
+      a {
+        margin: 0 0 2em 0;
+      }
+    }
+
+    ul.svg {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .projects {
+    .image {
+      max-width: 700px;
     }
   }
 }
