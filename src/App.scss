@@ -18,12 +18,13 @@ $base-color: #3f3d56;
 
   ul.svg {
     display: none;
-    position: absolute;
+    position: fixed;
     display: flex;
     right: 0;
     bottom: 0;
     width: 100vw;
     justify-content: center;
+    z-index: 100;
 
     div {
       background-color: $base-color;
