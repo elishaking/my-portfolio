@@ -1,4 +1,4 @@
-$base-color: #3F3D56;
+$base-color: #3f3d56;
 
 .headline {
   font-size: 300%;
@@ -68,7 +68,7 @@ $base-color: #3F3D56;
         margin: 0.3em 0;
 
         span {
-          color: #6C5884;
+          color: #6c5884;
         }
       }
 
@@ -193,7 +193,7 @@ $base-color: #3F3D56;
     margin: 1em 0 2em 0;
 
     span {
-      color: #6C5884;
+      color: #6c5884;
     }
   }
 
@@ -283,4 +283,28 @@ $base-color: #3F3D56;
 
 .app {
   background-color: rgba($color: #000000, $alpha: 0.1);
+}
+
+.img-placeholder {
+  height: 20vh;
+  background-color: rgba($color: $base-color, $alpha: 0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: imageLoading 1.3s ease-in-out infinite forwards;
+}
+
+@keyframes imageLoading {
+  0% {
+    background-color: rgba($color: $base-color, $alpha: 0.5);
+  }
+
+  50% {
+    background-color: rgba($color: $base-color, $alpha: 1);
+  }
+
+  100% {
+    background-color: rgba($color: $base-color, $alpha: 0.5);
+  }
 }
