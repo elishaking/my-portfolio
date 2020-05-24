@@ -21,35 +21,35 @@ export default function Navbar({ route = "home" }) {
             <Github />
           </a>
           <a
-            href="https://github.com/elishaking"
+            href="https://dribbble.com/kingelisha"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Dribbble />
           </a>
           <a
-            href="https://github.com/elishaking"
+            href="https://www.linkedin.com/in/elishaking"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Linkedin />
           </a>
           <a
-            href="https://github.com/elishaking"
+            href="https://medium.com/@skyblazar.cc"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Medium />
           </a>
           <a
-            href="https://github.com/elishaking"
+            href="https://dev.to/elishaking"
             target="_blank"
             rel="noopener noreferrer"
           >
             <DevTo />
           </a>
           <a
-            href="https://github.com/elishaking"
+            href="https://medium.com/@kingelisha"
             target="_blank"
             rel="noopener noreferrer"
           >
