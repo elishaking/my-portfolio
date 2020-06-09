@@ -12,6 +12,8 @@ import blazehub from "../../assets/images/projects/BlazeHub.svg";
 import squaredemy from "../../assets/images/projects/Squaredemy.svg";
 import nasax from "../../assets/images/projects/NasaX.svg";
 import markdown from "../../assets/images/projects/Blaze-Markdown.svg";
+import xspacenews from "../../assets/images/projects/Xspacenews.png";
+
 import Project from "../Project";
 
 const projects = [
@@ -28,6 +30,14 @@ const projects = [
       "GCP",
       "Jest/Supertest/GitHub Actions",
     ],
+  },
+  {
+    name: "Xspacenews: Interesting stories on space exploration",
+    source: xspacenews,
+    description:
+      "Updated headlines on space exploration from reputable sources.",
+    link: "https://xspacenews.skyblazar.com/top-stories",
+    tech: ["React/Redux", "Node/Express", "PostgreSQL", "Heroku/Serverless"],
   },
   {
     name: "Squaredemy: The most productive way to learn",
