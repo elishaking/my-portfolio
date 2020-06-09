@@ -10,7 +10,7 @@ import gracelites from "../../assets/images/projects/Gracelites.svg";
 import quotz from "../../assets/images/projects/Quotz.svg";
 import blazehub from "../../assets/images/projects/BlazeHub.svg";
 import squaredemy from "../../assets/images/projects/Squaredemy.svg";
-import nasax from "../../assets/images/projects/NasaX.svg";
+import nasax from "../../assets/images/projects/NasaX.png";
 import markdown from "../../assets/images/projects/Blaze-Markdown.svg";
 import xspacenews from "../../assets/images/projects/Xspacenews.png";
 
